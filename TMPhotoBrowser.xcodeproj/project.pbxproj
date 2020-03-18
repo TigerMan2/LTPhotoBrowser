@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C69FEE9D95ED2A25095B4ED /* libPods-TMPhotoBrowserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB99E4E553C62AD1A88AF65 /* libPods-TMPhotoBrowserTests.a */; };
+		AA085D0C242201BA00F016F9 /* TMZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085CF7242201BA00F016F9 /* TMZoomingScrollView.m */; };
+		AA085D0D242201BA00F016F9 /* TMPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085CF8242201BA00F016F9 /* TMPhotoBrowser.m */; };
+		AA085D0E242201BA00F016F9 /* UIView+TMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085CFA242201BA00F016F9 /* UIView+TMExtension.m */; };
+		AA085D0F242201BA00F016F9 /* UIImage+TMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085CFB242201BA00F016F9 /* UIImage+TMExtension.m */; };
+		AA085D10242201BA00F016F9 /* TMDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085D01242201BA00F016F9 /* TMDotView.m */; };
+		AA085D11242201BA00F016F9 /* TMAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085D02242201BA00F016F9 /* TMAnimatedDotView.m */; };
+		AA085D12242201BA00F016F9 /* TMBaseDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085D03242201BA00F016F9 /* TMBaseDotView.m */; };
+		AA085D13242201BA00F016F9 /* TMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085D04242201BA00F016F9 /* TMPageControl.m */; };
+		AA085D14242201BA00F016F9 /* TMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA085D0B242201BA00F016F9 /* TMProgressView.m */; };
+		AA29433823126EC700E1DA40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29433723126EC700E1DA40 /* AppDelegate.m */; };
+		AA29433B23126EC700E1DA40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29433A23126EC700E1DA40 /* ViewController.m */; };
+		AA29433E23126EC700E1DA40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA29433C23126EC700E1DA40 /* Main.storyboard */; };
+		AA29434023126EC900E1DA40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA29433F23126EC900E1DA40 /* Assets.xcassets */; };
+		AA29434323126EC900E1DA40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA29434123126EC900E1DA40 /* LaunchScreen.storyboard */; };
+		AA29434623126EC900E1DA40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29434523126EC900E1DA40 /* main.m */; };
+		AA29435023126EC900E1DA40 /* TMPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29434F23126EC900E1DA40 /* TMPhotoBrowserTests.m */; };
+		AA29435B23126EC900E1DA40 /* TMPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA29435A23126EC900E1DA40 /* TMPhotoBrowserUITests.m */; };
+		D96F1B47F3FFB0806E918D74 /* libPods-TMPhotoBrowserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE64CE0C61D3EF87B09C3BC7 /* libPods-TMPhotoBrowserUITests.a */; };
+		FFC01431848C70F41F5BF642 /* libPods-TMPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2383B8ADD2157AB39773A7A /* libPods-TMPhotoBrowser.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA29434C23126EC900E1DA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA29432B23126EC700E1DA40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA29433223126EC700E1DA40;
+			remoteInfo = TMPhotoBrowser;
+		};
+		AA29435723126EC900E1DA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA29432B23126EC700E1DA40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA29433223126EC700E1DA40;
+			remoteInfo = TMPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		285D0FF8C9E89B16C1CE86FA /* Pods-TMPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMPhotoBrowser/Pods-TMPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		2E580553CF7F1AC5D8E6C3C2 /* Pods-TMPhotoBrowserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMPhotoBrowserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMPhotoBrowserTests/Pods-TMPhotoBrowserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		387AC083B943A9B866C878C0 /* Pods-TMPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMPhotoBrowser/Pods-TMPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB23FF1442E4D010829E9DA /* Pods-TMPhotoBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMPhotoBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMPhotoBrowserTests/Pods-TMPhotoBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DB99E4E553C62AD1A88AF65 /* libPods-TMPhotoBrowserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMPhotoBrowserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754D5AAE119CD2FF9593ADB1 /* Pods-TMPhotoBrowserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMPhotoBrowserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMPhotoBrowserUITests/Pods-TMPhotoBrowserUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2383B8ADD2157AB39773A7A /* libPods-TMPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA085CF6242201BA00F016F9 /* UIImage+TMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TMExtension.h"; sourceTree = "<group>"; };
+		AA085CF7242201BA00F016F9 /* TMZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMZoomingScrollView.m; sourceTree = "<group>"; };
+		AA085CF8242201BA00F016F9 /* TMPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPhotoBrowser.m; sourceTree = "<group>"; };
+		AA085CF9242201BA00F016F9 /* TMPhotoBrowserDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPhotoBrowserDefine.h; sourceTree = "<group>"; };
+		AA085CFA242201BA00F016F9 /* UIView+TMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TMExtension.m"; sourceTree = "<group>"; };
+		AA085CFB242201BA00F016F9 /* UIImage+TMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TMExtension.m"; sourceTree = "<group>"; };
+		AA085CFC242201BA00F016F9 /* TMPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPhotoBrowser.h; sourceTree = "<group>"; };
+		AA085CFD242201BA00F016F9 /* TMZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMZoomingScrollView.h; sourceTree = "<group>"; };
+		AA085CFE242201BA00F016F9 /* UIView+TMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TMExtension.h"; sourceTree = "<group>"; };
+		AA085D01242201BA00F016F9 /* TMDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDotView.m; sourceTree = "<group>"; };
+		AA085D02242201BA00F016F9 /* TMAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAnimatedDotView.m; sourceTree = "<group>"; };
+		AA085D03242201BA00F016F9 /* TMBaseDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBaseDotView.m; sourceTree = "<group>"; };
+		AA085D04242201BA00F016F9 /* TMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPageControl.m; sourceTree = "<group>"; };
+		AA085D05242201BA00F016F9 /* TMDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDotView.h; sourceTree = "<group>"; };
+		AA085D06242201BA00F016F9 /* TMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPageControl.h; sourceTree = "<group>"; };
+		AA085D07242201BA00F016F9 /* TMBaseDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBaseDotView.h; sourceTree = "<group>"; };
+		AA085D08242201BA00F016F9 /* TMAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAnimatedDotView.h; sourceTree = "<group>"; };
+		AA085D0A242201BA00F016F9 /* TMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMProgressView.h; sourceTree = "<group>"; };
+		AA085D0B242201BA00F016F9 /* TMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMProgressView.m; sourceTree = "<group>"; };
+		AA29433323126EC700E1DA40 /* TMPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA29433623126EC700E1DA40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA29433723126EC700E1DA40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA29433923126EC700E1DA40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA29433A23126EC700E1DA40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA29433D23126EC700E1DA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA29433F23126EC900E1DA40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA29434223126EC900E1DA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA29434423126EC900E1DA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA29434523126EC900E1DA40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA29434B23126EC900E1DA40 /* TMPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA29434F23126EC900E1DA40 /* TMPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPhotoBrowserTests.m; sourceTree = "<group>"; };
+		AA29435123126EC900E1DA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA29435623126EC900E1DA40 /* TMPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA29435A23126EC900E1DA40 /* TMPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		AA29435C23126EC900E1DA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B007364709B43B5722820258 /* Pods-TMPhotoBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMPhotoBrowserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMPhotoBrowserUITests/Pods-TMPhotoBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE64CE0C61D3EF87B09C3BC7 /* libPods-TMPhotoBrowserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMPhotoBrowserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA29433023126EC700E1DA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC01431848C70F41F5BF642 /* libPods-TMPhotoBrowser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29434823126EC900E1DA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C69FEE9D95ED2A25095B4ED /* libPods-TMPhotoBrowserTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29435323126EC900E1DA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96F1B47F3FFB0806E918D74 /* libPods-TMPhotoBrowserUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA085CF5242201BA00F016F9 /* TMPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				AA085CF6242201BA00F016F9 /* UIImage+TMExtension.h */,
+				AA085CF7242201BA00F016F9 /* TMZoomingScrollView.m */,
+				AA085CF8242201BA00F016F9 /* TMPhotoBrowser.m */,
+				AA085CF9242201BA00F016F9 /* TMPhotoBrowserDefine.h */,
+				AA085CFA242201BA00F016F9 /* UIView+TMExtension.m */,
+				AA085CFB242201BA00F016F9 /* UIImage+TMExtension.m */,
+				AA085CFC242201BA00F016F9 /* TMPhotoBrowser.h */,
+				AA085CFD242201BA00F016F9 /* TMZoomingScrollView.h */,
+				AA085CFE242201BA00F016F9 /* UIView+TMExtension.h */,
+				AA085CFF242201BA00F016F9 /* Vender */,
+			);
+			path = TMPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		AA085CFF242201BA00F016F9 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				AA085D00242201BA00F016F9 /* PageControl */,
+				AA085D09242201BA00F016F9 /* ProgressView */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		AA085D00242201BA00F016F9 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				AA085D01242201BA00F016F9 /* TMDotView.m */,
+				AA085D02242201BA00F016F9 /* TMAnimatedDotView.m */,
+				AA085D03242201BA00F016F9 /* TMBaseDotView.m */,
+				AA085D04242201BA00F016F9 /* TMPageControl.m */,
+				AA085D05242201BA00F016F9 /* TMDotView.h */,
+				AA085D06242201BA00F016F9 /* TMPageControl.h */,
+				AA085D07242201BA00F016F9 /* TMBaseDotView.h */,
+				AA085D08242201BA00F016F9 /* TMAnimatedDotView.h */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		AA085D09242201BA00F016F9 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				AA085D0A242201BA00F016F9 /* TMProgressView.h */,
+				AA085D0B242201BA00F016F9 /* TMProgressView.m */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		AA29432A23126EC700E1DA40 = {
+			isa = PBXGroup;
+			children = (
+				AA29433523126EC700E1DA40 /* TMPhotoBrowser */,
+				AA29434E23126EC900E1DA40 /* TMPhotoBrowserTests */,
+				AA29435923126EC900E1DA40 /* TMPhotoBrowserUITests */,
+				AA29433423126EC700E1DA40 /* Products */,
+				E54DF5CF17AD98152573483D /* Pods */,
+				DBA1B9C834C13C126D4FEA33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA29433423126EC700E1DA40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA29433323126EC700E1DA40 /* TMPhotoBrowser.app */,
+				AA29434B23126EC900E1DA40 /* TMPhotoBrowserTests.xctest */,
+				AA29435623126EC900E1DA40 /* TMPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA29433523126EC700E1DA40 /* TMPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				AA085CF5242201BA00F016F9 /* TMPhotoBrowser */,
+				AA29433623126EC700E1DA40 /* AppDelegate.h */,
+				AA29433723126EC700E1DA40 /* AppDelegate.m */,
+				AA29433923126EC700E1DA40 /* ViewController.h */,
+				AA29433A23126EC700E1DA40 /* ViewController.m */,
+				AA29433C23126EC700E1DA40 /* Main.storyboard */,
+				AA29433F23126EC900E1DA40 /* Assets.xcassets */,
+				AA29434123126EC900E1DA40 /* LaunchScreen.storyboard */,
+				AA29434423126EC900E1DA40 /* Info.plist */,
+				AA29434523126EC900E1DA40 /* main.m */,
+			);
+			path = TMPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		AA29434E23126EC900E1DA40 /* TMPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA29434F23126EC900E1DA40 /* TMPhotoBrowserTests.m */,
+				AA29435123126EC900E1DA40 /* Info.plist */,
+			);
+			path = TMPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		AA29435923126EC900E1DA40 /* TMPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA29435A23126EC900E1DA40 /* TMPhotoBrowserUITests.m */,
+				AA29435C23126EC900E1DA40 /* Info.plist */,
+			);
+			path = TMPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+		DBA1B9C834C13C126D4FEA33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2383B8ADD2157AB39773A7A /* libPods-TMPhotoBrowser.a */,
+				6DB99E4E553C62AD1A88AF65 /* libPods-TMPhotoBrowserTests.a */,
+				FE64CE0C61D3EF87B09C3BC7 /* libPods-TMPhotoBrowserUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E54DF5CF17AD98152573483D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				387AC083B943A9B866C878C0 /* Pods-TMPhotoBrowser.debug.xcconfig */,
+				285D0FF8C9E89B16C1CE86FA /* Pods-TMPhotoBrowser.release.xcconfig */,
+				2E580553CF7F1AC5D8E6C3C2 /* Pods-TMPhotoBrowserTests.debug.xcconfig */,
+				6BB23FF1442E4D010829E9DA /* Pods-TMPhotoBrowserTests.release.xcconfig */,
+				754D5AAE119CD2FF9593ADB1 /* Pods-TMPhotoBrowserUITests.debug.xcconfig */,
+				B007364709B43B5722820258 /* Pods-TMPhotoBrowserUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA29433223126EC700E1DA40 /* TMPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA29435F23126EC900E1DA40 /* Build configuration list for PBXNativeTarget "TMPhotoBrowser" */;
+			buildPhases = (
+				3CE300B94CA2F4CE50374ABF /* [CP] Check Pods Manifest.lock */,
+				AA29432F23126EC700E1DA40 /* Sources */,
+				AA29433023126EC700E1DA40 /* Frameworks */,
+				AA29433123126EC700E1DA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMPhotoBrowser;
+			productName = TMPhotoBrowser;
+			productReference = AA29433323126EC700E1DA40 /* TMPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA29434A23126EC900E1DA40 /* TMPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA29436223126EC900E1DA40 /* Build configuration list for PBXNativeTarget "TMPhotoBrowserTests" */;
+			buildPhases = (
+				552E8B0795B936C637B40C00 /* [CP] Check Pods Manifest.lock */,
+				AA29434723126EC900E1DA40 /* Sources */,
+				AA29434823126EC900E1DA40 /* Frameworks */,
+				AA29434923126EC900E1DA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA29434D23126EC900E1DA40 /* PBXTargetDependency */,
+			);
+			name = TMPhotoBrowserTests;
+			productName = TMPhotoBrowserTests;
+			productReference = AA29434B23126EC900E1DA40 /* TMPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA29435523126EC900E1DA40 /* TMPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA29436523126EC900E1DA40 /* Build configuration list for PBXNativeTarget "TMPhotoBrowserUITests" */;
+			buildPhases = (
+				174DFDBF722F7106D7DD17C2 /* [CP] Check Pods Manifest.lock */,
+				AA29435223126EC900E1DA40 /* Sources */,
+				AA29435323126EC900E1DA40 /* Frameworks */,
+				AA29435423126EC900E1DA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA29435823126EC900E1DA40 /* PBXTargetDependency */,
+			);
+			name = TMPhotoBrowserUITests;
+			productName = TMPhotoBrowserUITests;
+			productReference = AA29435623126EC900E1DA40 /* TMPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA29432B23126EC700E1DA40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = mrstock;
+				TargetAttributes = {
+					AA29433223126EC700E1DA40 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					AA29434A23126EC900E1DA40 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = AA29433223126EC700E1DA40;
+					};
+					AA29435523126EC900E1DA40 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = AA29433223126EC700E1DA40;
+					};
+				};
+			};
+			buildConfigurationList = AA29432E23126EC700E1DA40 /* Build configuration list for PBXProject "TMPhotoBrowser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA29432A23126EC700E1DA40;
+			productRefGroup = AA29433423126EC700E1DA40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA29433223126EC700E1DA40 /* TMPhotoBrowser */,
+				AA29434A23126EC900E1DA40 /* TMPhotoBrowserTests */,
+				AA29435523126EC900E1DA40 /* TMPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA29433123126EC700E1DA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA29434323126EC900E1DA40 /* LaunchScreen.storyboard in Resources */,
+				AA29434023126EC900E1DA40 /* Assets.xcassets in Resources */,
+				AA29433E23126EC700E1DA40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29434923126EC900E1DA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29435423126EC900E1DA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		174DFDBF722F7106D7DD17C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMPhotoBrowserUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE300B94CA2F4CE50374ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMPhotoBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		552E8B0795B936C637B40C00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMPhotoBrowserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA29432F23126EC700E1DA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA085D13242201BA00F016F9 /* TMPageControl.m in Sources */,
+				AA085D10242201BA00F016F9 /* TMDotView.m in Sources */,
+				AA085D11242201BA00F016F9 /* TMAnimatedDotView.m in Sources */,
+				AA29433B23126EC700E1DA40 /* ViewController.m in Sources */,
+				AA085D12242201BA00F016F9 /* TMBaseDotView.m in Sources */,
+				AA085D0D242201BA00F016F9 /* TMPhotoBrowser.m in Sources */,
+				AA085D0F242201BA00F016F9 /* UIImage+TMExtension.m in Sources */,
+				AA085D0E242201BA00F016F9 /* UIView+TMExtension.m in Sources */,
+				AA085D0C242201BA00F016F9 /* TMZoomingScrollView.m in Sources */,
+				AA29434623126EC900E1DA40 /* main.m in Sources */,
+				AA29433823126EC700E1DA40 /* AppDelegate.m in Sources */,
+				AA085D14242201BA00F016F9 /* TMProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29434723126EC900E1DA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA29435023126EC900E1DA40 /* TMPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29435223126EC900E1DA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA29435B23126EC900E1DA40 /* TMPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA29434D23126EC900E1DA40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA29433223126EC700E1DA40 /* TMPhotoBrowser */;
+			targetProxy = AA29434C23126EC900E1DA40 /* PBXContainerItemProxy */;
+		};
+		AA29435823126EC900E1DA40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA29433223126EC700E1DA40 /* TMPhotoBrowser */;
+			targetProxy = AA29435723126EC900E1DA40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA29433C23126EC700E1DA40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA29433D23126EC700E1DA40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA29434123126EC900E1DA40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA29434223126EC900E1DA40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA29435D23126EC900E1DA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA29435E23126EC900E1DA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA29436023126EC900E1DA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387AC083B943A9B866C878C0 /* Pods-TMPhotoBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4634493CA;
+				INFOPLIST_FILE = TMPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.TMPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA29436123126EC900E1DA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285D0FF8C9E89B16C1CE86FA /* Pods-TMPhotoBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4634493CA;
+				INFOPLIST_FILE = TMPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.TMPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA29436323126EC900E1DA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E580553CF7F1AC5D8E6C3C2 /* Pods-TMPhotoBrowserTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.TMPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMPhotoBrowser.app/TMPhotoBrowser";
+			};
+			name = Debug;
+		};
+		AA29436423126EC900E1DA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB23FF1442E4D010829E9DA /* Pods-TMPhotoBrowserTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.TMPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMPhotoBrowser.app/TMPhotoBrowser";
+			};
+			name = Release;
+		};
+		AA29436623126EC900E1DA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754D5AAE119CD2FF9593ADB1 /* Pods-TMPhotoBrowserUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.TMPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TMPhotoBrowser;
+			};
+			name = Debug;
+		};
+		AA29436723126EC900E1DA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B007364709B43B5722820258 /* Pods-TMPhotoBrowserUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.TMPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TMPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA29432E23126EC700E1DA40 /* Build configuration list for PBXProject "TMPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA29435D23126EC900E1DA40 /* Debug */,
+				AA29435E23126EC900E1DA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA29435F23126EC900E1DA40 /* Build configuration list for PBXNativeTarget "TMPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA29436023126EC900E1DA40 /* Debug */,
+				AA29436123126EC900E1DA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA29436223126EC900E1DA40 /* Build configuration list for PBXNativeTarget "TMPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA29436323126EC900E1DA40 /* Debug */,
+				AA29436423126EC900E1DA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA29436523126EC900E1DA40 /* Build configuration list for PBXNativeTarget "TMPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA29436623126EC900E1DA40 /* Debug */,
+				AA29436723126EC900E1DA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA29432B23126EC700E1DA40 /* Project object */;
+}
